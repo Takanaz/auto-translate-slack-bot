@@ -1,0 +1,35 @@
+{
+	"display_information": {
+		"name": "Flag Reaction Translator",
+		"description": "国旗リアクションでメッセージを翻訳し、押した本人だけに表示します",
+		"background_color": "#2F2F2F"
+	},
+	"features": {
+		"bot_user": {
+			"display_name": "Flag Reaction Translator",
+			"always_online": false
+		}
+	},
+	"oauth_config": {
+		"scopes": {
+			"bot": [
+				"reactions:read",
+				"channels:history",
+				"groups:history",
+				"chat:write"
+			]
+		}
+	},
+	"settings": {
+		"event_subscriptions": {
+			"request_url": "https://YOUR_DOMAIN/api/slack/events",
+			"bot_events": ["reaction_added"]
+		},
+		"interactivity": {
+			"is_enabled": false
+		},
+		"org_deploy_enabled": false,
+		"socket_mode_enabled": false,
+		"token_rotation_enabled": false
+	}
+}

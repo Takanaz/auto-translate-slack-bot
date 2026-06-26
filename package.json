@@ -9,15 +9,15 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@slack/bolt": "^4.6.0",
+		"@slack/bolt": "^4.7.3",
 		"@slack/web-api": "^7.17.0",
-		"@vercel/functions": "^2.0.0",
-		"h3": "^1.15.4"
+		"@vercel/functions": "^3.7.3",
+		"h3": "^1.15.11"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.1",
-		"@types/node": "^22.19.3",
-		"nitropack": "^2.12.9",
-		"typescript": "^5.9.3"
+		"@types/node": "^26.0.1",
+		"nitropack": "^2.13.4",
+		"typescript": "^6.0.3"
 	}
 }

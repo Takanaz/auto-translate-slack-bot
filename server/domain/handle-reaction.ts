@@ -41,6 +41,7 @@ export async function handleReaction(
 				user,
 				text: resolution.message,
 			});
+
 			return;
 		}
 

@@ -107,6 +107,7 @@ export function resolveReaction(reaction: string): ReactionResolution | null {
 	if (SUPPORTED_LANGS.has(lang)) {
 		return { kind: "supported", lang };
 	}
+
 	return {
 		kind: "unsupported",
 		lang,

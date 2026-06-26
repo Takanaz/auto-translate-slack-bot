@@ -12,6 +12,7 @@ export type AppConfig = {
 function requireEnv(name: string) {
 	const v = process.env[name];
 	if (!v) throw new Error(`Missing required env: ${name}`);
+
 	return v;
 }
 
@@ -25,6 +26,7 @@ function parseChannelIds(): Set<string> {
 	if (ids.length === 0) {
 		throw new Error("TARGET_CHANNEL_IDS must contain at least one channel id");
 	}
+
 	return new Set(ids);
 }
 

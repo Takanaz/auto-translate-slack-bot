@@ -16,6 +16,9 @@ export function getSlackApp() {
 	const receiver = new HTTPReceiver({
 		signingSecret: cfg.slackSigningSecret,
 		processBeforeResponse: true,
+		// HTTPReceiverのデフォルトは "/slack/events"。
+		// このアプリのルート(/api/slack/events)と一致しないと例外を投げるため明示する
+		endpoints: "/api/slack/events",
 	});
 
 	const app = new App({

@@ -32,8 +32,9 @@ export async function fetchMessageText(
 		if (msg && msg.ts === ts && msg.text) {
 			return { text: msg.text, threadTs: msg.thread_ts };
 		}
-	} catch {
+	} catch (err) {
 		// history で取れない場合は replies にフォールバック
+		console.warn("[message] conversations.history failed", err);
 	}
 
 	// 2) スレッド返信は history に現れないことがある。replies は子tsを渡してもよい仕様。
@@ -43,8 +44,9 @@ export async function fetchMessageText(
 		if (msg?.text) {
 			return { text: msg.text, threadTs: msg.thread_ts };
 		}
-	} catch {
+	} catch (err) {
 		// ここでも取れなければ null（巨大スレッドの末尾返信などは取りこぼす可能性あり）
+		console.error("[message] conversations.replies failed", err);
 	}
 
 	return null;

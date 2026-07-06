@@ -51,6 +51,7 @@ pnpm run dev
 - 購読イベント: `reaction_added`
 - 必要な権限（Bot Token Scopes）:
   - `reactions:read` … `reaction_added` の受信
+  - `reactions:write` … 処理状態スタンプ（🔁 → ✅ / ❌）の付与・除去
   - `channels:history` / `groups:history` … 元メッセージ本文の取得（public/privateに応じて）
   - `chat:write` … `postEphemeral` 投稿
 - **Botを対象チャンネルに招待**してください（`/invite @Flag Reaction Translator`）。本文取得・ephemeral投稿ともBotがチャンネルメンバーである必要があります。

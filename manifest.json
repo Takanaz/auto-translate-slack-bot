@@ -1,8 +1,9 @@
 {
 	"display_information": {
 		"name": "Flag Reaction Translator",
-		"description": "国旗リアクションでメッセージを翻訳し、押した本人だけに表示します",
-		"background_color": "#2F2F2F"
+		"short_description": "If you add a flag sticker to a message, it will be translated into that language.",
+		"long_description": "When you apply a flag sticker to a message in a different language, the text will be translated into that language and displayed as a message visible only to you. Please note that stickers other than flags are ignored. Currently supported languages are Japanese (🇯🇵), English (🇬🇧, 🇺🇸), and Vietnamese (🇻🇳). We use the Cloud Translation API for translation.",
+		"background_color": "#c55100"
 	},
 	"features": {
 		"bot_user": {
@@ -14,6 +15,7 @@
 		"scopes": {
 			"bot": [
 				"reactions:read",
+				"reactions:write",
 				"channels:history",
 				"groups:history",
 				"chat:write"

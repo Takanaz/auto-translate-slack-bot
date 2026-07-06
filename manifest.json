@@ -1,9 +1,9 @@
 {
 	"display_information": {
 		"name": "Flag Reaction Translator",
-		"short_description": "If you add a flag sticker to a message, it will be translated into that language.",
-		"long_description": "When you apply a flag sticker to a message in a different language, the text will be translated into that language and displayed as a message visible only to you. Please note that stickers other than flags are ignored. Currently supported languages are Japanese (🇯🇵), English (🇬🇧, 🇺🇸), and Vietnamese (🇻🇳). We use the Cloud Translation API for translation.",
-		"background_color": "#c55100"
+		"description": "If you add a flag sticker to a message, it will be translated into that language.",
+		"background_color": "#c55100",
+		"long_description": "When you apply a flag sticker to a message in a different language, the text will be translated into that language and displayed as a message visible only to you.\r\nPlease note that stickers other than flags are ignored. Currently supported languages are Japanese (🇯🇵), English (🇬🇧, 🇺🇸), and Vietnamese (🇻🇳).\r\nWe use the Cloud Translation API for translation."
 	},
 	"features": {
 		"bot_user": {
